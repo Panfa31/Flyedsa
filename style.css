@@ -61,22 +61,6 @@ header h1 {
   font-size: var(--font-size-lg);
 }
 
-nav {
-  background: var(--secondary-color);
-  padding: 0.5rem;
-  text-align: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
 
 main {
   padding: 2rem;
@@ -113,24 +97,40 @@ footer p {
   transform: translateY(0);
 }
 
-.navbar {
-  position: absolute;
-  top: 20px;
-  right: 180px;
+nav {
+  background: var(--secondary-color);
+  padding: 0.5rem 0;
   display: flex;
-  gap: 20px;
-  font-size: 18px;
-  font-weight: 300;
+  justify-content: center;
   align-items: center;
+  font-family: var(--font-main);
+  font-weight: 400;
+  position: relative;
+  z-index: 10;
 }
 
-.navbar a {
+nav .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
   text-decoration: none;
-  color: #000;
+  font-weight: 400;
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  transition: color 0.2s;
 }
 
-.navbar a:hover {
+nav a:hover {
   text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .login-button {
@@ -151,7 +151,7 @@ footer p {
   background-color: var(--secondary-color);
   margin-top: 80px;
   height: 500px;
-  position: a;
+  position: relative;
 }
 
 .hero-text {
@@ -227,10 +227,8 @@ select {
 /* Removed duplicate .route selector */
 
 .swap-arrow {
-  color: var(--accent-color);
-  margin: 0 10px;
-/* Removed duplicate .swap-arrow selector */
   color: #cccccc;
+  margin: 0 10px;
 }
 
 .search-button {
@@ -268,7 +266,7 @@ select {
   border-radius: 4px;
   background:transparent;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition: 0.2s, border-color 0.2s;
   position: absolute;
   left: 0;
   top: 50%;
@@ -308,15 +306,6 @@ select {
   width: 744px;
   font-family: var(--font-main);
   color: var(--primary-bg);
- text-decoration: underline;
-  font-size: 24px;
-.safety-section {
-  position: absolute;
-  top: 1090px;
-  left: 685px;
-  width: 744px;
-  font-family: var(--font-main);
-  color: var(--primary-bg);
   text-decoration: underline;
   font-size: 24px;
   font-weight: 700;
@@ -334,16 +323,6 @@ select {
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 36px;
-  margin-bottom: 32px;
-}
-
-.safety-section .columns {
-  display: flex;
-  gap: 60px;
 }
 
 .safety-section .columns div {
@@ -406,12 +385,14 @@ select {
   display: flex;
   flex-direction: column;
 }
-
-label {
-  font-size: var(--font-size-sm);
-  margin-bottom: 5px;
+.footer a:hover {
+  text-decoration: underline;
 }
-
+input[type="text"],
+select {
+  background-color: var(--input-bg);
+  border: none;
+  border-bottom: 1px solid var(--input-border);
 input[type="text"],
 select {
   background-color: var(--input-bg);
@@ -420,66 +401,43 @@ select {
   color: var(--input-text);
   padding: 5px;
   min-width: 150px;
-.footer a:hover {
-  text-decoration: underline;
 }
+input[type="text"],
+select {
+  background-color: var(--input-bg);
+  border: none;
+  border-bottom: 1px solid var(--input-border);
   color: var(--input-text);
-  padding: 5px;
-}
-
 .checkbox-group {
   margin-top: 20px;
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
-/* Removed duplicate .input-group selector */
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9em;
-}
-/* Removed duplicate label selector */
-  padding: 15px 30px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.advanced-search {
   margin-top: 10px;
   font-size: 0.9em;
   color: #fff;
   cursor: pointer;
 }
+/* Removed duplicate .search-button selector */
 
-.route {
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-.swap-arrow {
-  color: var(--accent-color);
-  margin: 0 10px;
-}
-/* Removed duplicate .checkbox-group selector */
-.featured-destinations-title
-{
+.carousel-inner .item {
+  background: var(--primary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 320px;
+  min-width: 300px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+.featured-destinations-title {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   margin-top: 50px;
-/* Removed duplicate .checkbox-group label selector */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: var(--secondary-color);
-  padding: 20px;
-  border-radius: var(--border-radius);
-/* Removed duplicate .search-button selector */
-  align-items: flex-start;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .carousel-inner .item {
   background: var(--primary-bg);
   border-radius: var(--border-radius);
@@ -495,22 +453,15 @@ select {
   align-items: center;
 }
 
-.carousel-inner .item.active,
-.carousel-inner .item:hover {
-  transform: scale(1.04);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.22);
-}
-
-.carousel-inner .item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  display: block;
-}
-
-.carousel-caption {
-  background: rgba(0,0,0,0.55);
+.featured-destinations-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 40px;
   color: #fff;
   width: 100%;
   padding: 18px 0 10px 0;
@@ -520,11 +471,4 @@ select {
   text-align: center;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
-
-.destination-name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--accent-color);
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
