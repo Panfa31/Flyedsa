@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Related Content - FlyEDSA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Inter:wght@500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8e+z5l5c5e5f5e5f5e5f5e5f5e5f5e5f5e" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', Arial, sans-serif;
             background: #f4f8fb;
             margin: 0;
             padding: 0;
@@ -21,6 +26,7 @@
         h1 {
             color: #2a4d69;
             margin-bottom: 18px;
+            font-family: 'Poppins', Arial, sans-serif;
         }
         ul.related {
             list-style: none;
@@ -34,6 +40,7 @@
             color: #4a90e2;
             font-weight: 500;
             transition: color 0.2s;
+            font-family: 'Inter', Arial, sans-serif;
         }
         ul.related a:hover {
             color: #2a4d69;
@@ -54,15 +61,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Related Content</h1>
+        <h1><i class="fas fa-link"></i> Related Content</h1>
         <ul class="related">
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="about.html">About FlyEDSA</a></li>
-            <li><a href="contact.html">Contact Support</a></li>
-            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home Page</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About FlyEDSA</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Support</a></li>
+            <li><a href="faq.html"><i class="fas fa-question-circle"></i> Frequently Asked Questions</a></li>
         </ul>
         <div class="redirect">
-            Looking for something else? <a href="index.html">Go back to the Home Page</a>.
+            Looking for something else? <a href="index.html"><i class="fas fa-arrow-left"></i> Go back to the Home Page</a>.
         </div>
     </div>
 </body>

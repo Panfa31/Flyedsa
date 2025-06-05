@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Related Tours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Inter:wght@500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8e+z5l5c5e5f5e5f5e5f5e5f5e5f5e5f5e" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', 'Inter', 'Poppins', Arial, sans-serif;
             background: #f8f9fa;
             margin: 0;
             padding: 0;
@@ -21,6 +24,8 @@
         h2 {
             color: #2c3e50;
             margin-bottom: 24px;
+            font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
         }
         .related-tours {
             display: flex;
@@ -34,6 +39,7 @@
             width: 270px;
             padding: 18px;
             transition: box-shadow 0.2s;
+            font-family: 'Inter', 'Montserrat', Arial, sans-serif;
         }
         .tour-card:hover {
             box-shadow: 0 4px 16px rgba(44,62,80,0.12);
@@ -49,45 +55,23 @@
             font-size: 1.1em;
             color: #34495e;
             margin: 0 0 8px 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
         }
         .tour-desc {
             font-size: 0.97em;
             color: #666;
             margin-bottom: 10px;
+            font-family: 'Inter', Arial, sans-serif;
         }
         .tour-link {
             color: #2980b9;
             text-decoration: none;
             font-weight: bold;
+            font-family: 'Poppins', Arial, sans-serif;
         }
         .tour-link:hover {
             text-decoration: underline;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h2>Related Tours</h2>
-        <div class="related-tours">
-            <div class="tour-card">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="City Tour" class="tour-image">
-                <div class="tour-title">City Explorer Tour</div>
-                <div class="tour-desc">Discover the city's hidden gems and iconic landmarks with our guided city explorer tour.</div>
-                <a href="CityExplorer.html" class="tour-link">Learn More</a>
-            </div>
-            <div class="tour-card">
-                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Nature Adventure" class="tour-image">
-                <div class="tour-title">Nature Adventure</div>
-                <div class="tour-desc">Experience breathtaking landscapes and outdoor activities in our nature adventure package.</div>
-                <a href="NatureAdventure.html" class="tour-link">Learn More</a>
-            </div>
-            <div class="tour-card">
-                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Cultural Journey" class="tour-image">
-                <div class="tour-title">Cultural Journey</div>
-                <div class="tour-desc">Immerse yourself in local traditions, cuisine, and art with our cultural journey tour.</div>
-                <a href="CulturalJourney.html" class="tour-link">Learn More</a>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
