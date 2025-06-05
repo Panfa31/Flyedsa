@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Inter:wght@500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8e+z5l5c5e5f5e5f5e5f5e5f5e5f5e5f5e" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/x-icon" href="Media\Logo.png">
+    <link rel="icon" type="image/x-icon" href="Media\Logo.png">
     <style>
         body {
             font-family: 'Montserrat', Arial, sans-serif;
@@ -25,6 +27,39 @@
             color: #1a4d8f;
             margin-bottom: 16px;
             font-family: 'Poppins', Arial, sans-serif;
+        }
+        .flight-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+        .flight-table th, .flight-table td {
+            border: 1px solid #eaf1fa;
+            padding: 10px 12px;
+            text-align: left;
+        }
+        .flight-table th {
+            background: #eaf1fa;
+            color: #1a4d8f;
+        }
+        .book-btn {
+            background: #1a4d8f;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .book-btn:hover {
+            background: #2d6ca2;
+        }
+        .booking-info {
+            margin-top: 24px;
+            background: #eaf1fa;
+            padding: 18px;
+            border-radius: 6px;
         }
         .related-content {
             margin-top: 32px;
@@ -56,3 +91,80 @@
         }
     </style>
 </head>
+<body>
+      <img class="logo" src="Media\Logo.png" alt="Logo" />
+  <div class="nav">
+      <a href="home.html">Home</a>
+      <a href="flight.html">Flight</a>
+      <a href="tours.html">Tours</a>
+      <a href="pages.html">Pages</a>
+      <a href="news.html">News</a>
+      <a href="need_help.html">Need help?</a>
+    </div>
+    <button class="login-button" onclick="location.href='#login'">Login</button>
+  </div>
+    <div class="container">
+        <h1><i class="fas fa-plane-departure"></i> Flight Information</h1>
+        <table class="flight-table">
+            <thead>
+                <tr>
+                    <th>Flight</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Seats Left</th>
+                    <th>Book</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ED123</td>
+                    <td>London (LHR)</td>
+                    <td>Paris (CDG)</td>
+                    <td>09:30</td>
+                    <td>11:45</td>
+                    <td>12</td>
+                    <td><button class="book-btn">Book</button></td>
+                </tr>
+                <tr>
+                    <td>ED456</td>
+                    <td>London (LHR)</td>
+                    <td>New York (JFK)</td>
+                    <td>13:00</td>
+                    <td>16:30</td>
+                    <td>5</td>
+                    <td><button class="book-btn">Book</button></td>
+                </tr>
+                <tr>
+                    <td>ED789</td>
+                    <td>London (LHR)</td>
+                    <td>Dubai (DXB)</td>
+                    <td>20:15</td>
+                    <td>06:00+1</td>
+                    <td>8</td>
+                    <td><button class="book-btn">Book</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="booking-info">
+            <h2>Booking Information</h2>
+            <ul>
+                <li>Valid passport and visa (if required) are necessary for international flights.</li>
+                <li>Arrive at the airport at least 2 hours before departure for check-in and security.</li>
+                <li>Carry your booking confirmation and identification.</li>
+                <li>For special assistance or group bookings, contact our support team.</li>
+            </ul>
+        </div>
+        <div class="related-content">
+            <h2>Related Information</h2>
+            <ul class="related-list">
+                <li><a href="#">Baggage Allowance</a></li>
+                <li><a href="#">Flight Status</a></li>
+                <li><a href="#">Airport Transfers</a></li>
+                <li><a href="#">Travel Insurance</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

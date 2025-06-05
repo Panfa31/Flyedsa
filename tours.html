@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Inter:wght@500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8e+z5l5c5e5f5e5f5e5f5e5f5e5f5e5f5e" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/x-icon" href="Media\Logo.png">
+    <link rel="icon" type="image/x-icon" href="Media\Logo.png">
     <style>
         body {
             font-family: 'Montserrat', 'Inter', 'Poppins', Arial, sans-serif;
@@ -73,5 +73,64 @@
         .tour-link:hover {
             text-decoration: underline;
         }
+        .info-section {
+            margin-bottom: 32px;
+            color: #444;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
     </style>
 </head>
+<body>
+      <img class="logo" src="Media\Logo.png" alt="Logo" />
+  <div class="nav">
+      <a href="home.html">Home</a>
+      <a href="flight.html">Flight</a>
+      <a href="tours.html">Tours</a>
+      <a href="pages.html">Pages</a>
+      <a href="news.html">News</a>
+      <a href="need_help.html">Need help?</a>
+    </div>
+    <button class="login-button" onclick="location.href='#login'">Login</button>
+  </div>
+    <div class="container">
+        <h2>Discover Our Airline Tours</h2>
+        <div class="info-section">
+            <p>
+                Explore the world with our exclusive airline tours, designed to offer you unforgettable experiences at top destinations. Whether you're seeking adventure, culture, or relaxation, our curated tours provide seamless travel, comfortable accommodations, and expert guides. Book with us for a hassle-free journey and enjoy special packages, group discounts, and flexible itineraries.
+            </p>
+            <ul>
+                <li><strong>All-Inclusive Packages:</strong> Flights, hotels, and guided tours included.</li>
+                <li><strong>Customizable Itineraries:</strong> Tailor your trip to your interests and schedule.</li>
+                <li><strong>Frequent Flyer Benefits:</strong> Earn miles and enjoy exclusive perks.</li>
+                <li><strong>24/7 Support:</strong> Our team is here to assist you at every step.</li>
+            </ul>
+        </div>
+        <div class="related-tours">
+            <div class="tour-card">
+                <img src="Media/paris.jpg" alt="Paris City Tour" class="tour-image">
+                <div class="tour-title">Paris City Explorer</div>
+                <div class="tour-desc">Experience the romance of Paris with guided visits to the Eiffel Tower, Louvre Museum, and charming neighborhoods. Includes round-trip flights and 4-star accommodation.</div>
+                <a href="#" class="tour-link">Learn More</a>
+            </div>
+            <div class="tour-card">
+                <img src="Media/safari.jpg" alt="African Safari" class="tour-image">
+                <div class="tour-title">African Safari Adventure</div>
+                <div class="tour-desc">Embark on a thrilling safari in Kenya. Spot the Big Five, enjoy luxury lodges, and immerse yourself in local culture. Flights and transfers included.</div>
+                <a href="#" class="tour-link">Learn More</a>
+            </div>
+            <div class="tour-card">
+                <img src="Media/tokyo.jpg" alt="Tokyo Experience" class="tour-image">
+                <div class="tour-title">Tokyo Experience</div>
+                <div class="tour-desc">Discover the vibrant city of Tokyo with guided tours, traditional cuisine, and visits to historic temples. Package includes airfare and hotel stays.</div>
+                <a href="#" class="tour-link">Learn More</a>
+            </div>
+            <div class="tour-card">
+                <img src="Media/beach.jpg" alt="Caribbean Beach Getaway" class="tour-image">
+                <div class="tour-title">Caribbean Beach Getaway</div>
+                <div class="tour-desc">Relax on pristine beaches in the Caribbean. All-inclusive resort, water sports, and direct flights from major cities.</div>
+                <a href="#" class="tour-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
